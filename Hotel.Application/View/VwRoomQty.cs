@@ -8,14 +8,14 @@ namespace Hotel.Application.View
     {
         public int GetRoomQty()
         {
-            Console.WriteLine("Welcome to your Hotel Application powered by FiveStars.\n Please insert the number of rooms existing in your hotel.");
+            Console.WriteLine("Please insert the number of existing rooms of this type in your hotel.");
             var roomqty = Console.ReadLine();
             int.TryParse(roomqty, out int result);
             var looproomqty = result;
 
             while (looproomqty == 0)
             {
-                Console.WriteLine("Invalid Number. Please insert the number of rooms existing in your hotel.");
+                Console.WriteLine("Invalid Number. Please insert the number of existing rooms of this type in your hotel.");
                 roomqty = Console.ReadLine();
                 int.TryParse(roomqty, out int result1);
                 looproomqty = result1;

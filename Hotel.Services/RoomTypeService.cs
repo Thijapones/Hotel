@@ -20,6 +20,14 @@ namespace Hotel.Services
 
             return _roomtypeBusiness.GetList();
         }
-    }
+        public List<RoomType> Insertstd(params RoomType[] roomtype)
+        {
+            foreach (var item in roomtype)
+            {
+                _roomtypeBusiness.Add(item);
+            }
+
+            return _roomtypeBusiness.GetList();
+        }
     }
 }

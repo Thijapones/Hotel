@@ -8,6 +8,7 @@ namespace Hotel.Domain
     {
         public int Id { get; set; }
         public string RoomNumber { get; set; }
-        public bool RoomStatus { get; set; }
+        public int RoomType { get; set; }
+        public int RoomStatus { get; set; }
     }
 }

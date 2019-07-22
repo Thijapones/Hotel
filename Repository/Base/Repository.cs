@@ -7,8 +7,8 @@ namespace Repository.Base
 {
     public abstract class Repository<T> : IRepository<T>
     {
-        private static List<T> _list;
-        private static object _syncObj = new object();
+        private List<T> _list;
+        private object _syncObj = new object();
         public Repository()
         {
             if (_list == null)
